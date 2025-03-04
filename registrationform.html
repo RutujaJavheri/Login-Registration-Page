@@ -1,0 +1,126 @@
+<html>
+    <head>
+       <title>Registration Form</title>
+       <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container{
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0, 0, 10px, rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .input-group{
+            margin: 10px 0;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .password-group{
+            display: flex;
+            gap: 10px;
+        }
+        .password-group input{
+            width: 50%;
+        }
+        button{
+            background-color: #6200ea;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #3700b3;
+        }
+        .login-link{
+            margin-top:10px;
+            
+        }
+        @media (max-width: 600px){
+            .registration-container{
+                width: 95%;
+                padding: 15px;
+
+            }
+            input,button{
+                padding: 8px;
+            }
+            .password-group{
+                flex-direction: column;
+            }
+            .password-group input{
+                width:100%;
+            }
+        }
+       </style>
+    </head>
+    <body>
+      <div class="registration-container">
+       <form class="registration-form"></form>
+       <h1>Register</h1>
+       <div class="input-group">
+         <input type="text" placeholder="Full Name" required>
+       </div>
+
+       <div class="input-group">
+        <input type="email" placeholder="Email ID" required>
+       </div>
+
+       <div class="input-group password-group">
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+       </div>
+
+       <div class="input-group">
+        <input type="date" placeholder="Date of Birth" required>
+       </div>
+      
+       <div class="input-group">
+        <input type="text" placeholder="Address" required>
+       </div>
+  
+       <div class="input-group">
+        <input type="text" placeholder="City" required>
+       </div>
+
+       <div class="input-group">
+        <input type="text" placeholder="State" required>
+       </div> 
+
+       <div class="input-group">
+        <input type="text" placeholder="Zipcode" required>
+       </div>
+
+       <div class="input-group">
+        <input type="tel" placeholder="Mobile Number" required>
+       </div>
+   
+       <div class="input-group">
+        <input type="text" placeholder="Country" required>
+       </div>
+
+       <div class="input-group">
+        <input type="text" placeholder="Username" required>
+       </div>
+
+       <button type="submit">Register</button>
+       <p class="login-link">Already have an Account?<a href="loginform.html">Login</a></p>
+      </div>
+    </body>
+</html>
